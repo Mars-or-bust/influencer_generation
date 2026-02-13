@@ -1,0 +1,7 @@
+audio_generation
+config
+logs
+pipeline
+prompts
+video_generation
+write_homily

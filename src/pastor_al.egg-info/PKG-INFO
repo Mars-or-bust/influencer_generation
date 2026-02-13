@@ -1,0 +1,29 @@
+Metadata-Version: 2.4
+Name: pastor-al
+Version: 0.1.0
+Summary: AI robot pastor influencer - automated content generation pipeline
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: openai>=1.0
+Requires-Dist: httpx>=0.27
+Requires-Dist: python-dotenv>=1.0
+
+Project Idea:
+- AI pastor
+- Basically just have it be super progressive 
+- 15 minutes masses from home
+- Chat with god functionality 
+
+
+Steps: 
+- openAI ($10)
+    - Generate Homily text 
+    - Nice to have: 
+        - Related to daily news
+        - Mask background and insert influencer in new location
+- Suno ($8)
+    - generate homily narration + audio
+    - split the stems
+- higgsfield
+    - Generate the video with lypsynced audio ($25)
+- Post to sites (Buffer - $5)

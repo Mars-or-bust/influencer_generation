@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/audio_generation.py
+src/config.py
+src/pipeline.py
+src/video_generation.py
+src/write_homily.py
+src/pastor_al.egg-info/PKG-INFO
+src/pastor_al.egg-info/SOURCES.txt
+src/pastor_al.egg-info/dependency_links.txt
+src/pastor_al.egg-info/requires.txt
+src/pastor_al.egg-info/top_level.txt
