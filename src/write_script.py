@@ -2,10 +2,10 @@
 Step 1 — Generate the script content using OpenAI.
 
 Produces structured output:
-  - script_text   : the spoken script (used as lyrics for Suno)
+  - script_text   : the spoken script (used as lyrics for audio generation)
   - social_post   : a short social-media caption
   - video_prompt  : scene description for video generation
-  - audio_style   : genre/style tags for Suno
+  - audio_style   : genre/style tags for audio generation
 """
 
 from __future__ import annotations

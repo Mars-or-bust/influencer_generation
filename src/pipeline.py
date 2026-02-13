@@ -3,7 +3,7 @@ AI influencer content pipeline.
 
 Orchestrates the 3-step generation process:
   1. Write script   (OpenAI)
-  2. Generate audio  (Suno)
+  2. Generate audio  (MusicAPI)
   3. Generate video  (Segmind)
 
 Usage:
@@ -93,7 +93,7 @@ def main() -> None:
     if args.step == "video" or args.step is None:
         if audio_url is None:
             # Cross-session: load persisted URL from audio step
-            url_file = OUTPUT_DIR / "suno_audio_url.txt"
+            url_file = OUTPUT_DIR / "audio_url.txt"
             if not url_file.exists():
                 log.error("No audio URL found — run the audio step first")
                 sys.exit(1)

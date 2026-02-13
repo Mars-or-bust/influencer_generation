@@ -19,12 +19,12 @@ OUTPUT_DIR.mkdir(exist_ok=True)
 load_dotenv(ROOT_DIR / ".env")
 
 OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY", "")
-SUNO_API_KEY = os.environ.get("SUNO_API_KEY", "")
+MUSICAPI_API_KEY = os.environ.get("MUSICAPI_API_KEY", "")
 SEGMIND_API_KEY = os.environ.get("SEGMIND_API_KEY", "")
 
-# ── Suno config ────────────────────────────────────────────────────────────
-SUNO_BASE_URL = "https://api.sunoapi.org"
-SUNO_MODEL = "V4_5ALL"
+# ── MusicAPI config ───────────────────────────────────────────────────────
+MUSICAPI_BASE_URL = "https://api.musicapi.ai"
+MUSICAPI_MODEL = "sonic-v4-5"
 
 # ── Segmind / Higgsfield config ───────────────────────────────────────────
 SEGMIND_BASE_URL = "https://api.segmind.com"

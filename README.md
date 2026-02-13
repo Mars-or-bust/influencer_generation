@@ -10,7 +10,7 @@ The pipeline runs three steps in sequence, each calling a different API:
 
 1. **Script Generation (OpenAI)** — Generates a 30–60 second spoken-word content with a social media caption, a video scene prompt, and audio style tags.
 
-2. **Audio Generation (Suno)** — Sends the script text as lyrics to Suno's API with spoken-word/lo-fi gospel styling. Polls until the track is ready, then downloads the MP3.
+2. **Audio Generation (MusicAPI)** — Sends the script text as lyrics to MusicAPI's Sonic model with spoken-word/lo-fi gospel styling. Polls until the track is ready, then downloads the MP3.
 
 3. **Video Generation (Segmind)** — Submits the audio and an avatar image to Segmind's Infinite Talk endpoint, which produces a lip-synced video of the avatar speaking the sermon.
 
@@ -28,7 +28,7 @@ Create a `.env` file in the project root with your API keys:
 
 ```
 OPENAI_API_KEY=sk-...
-SUNO_API_KEY=...
+MUSICAPI_API_KEY=...
 SEGMIND_API_KEY=...
 ```
 
@@ -79,7 +79,7 @@ pastor_al/
 ├── src/
 │   ├── pipeline.py          # orchestrates the 3-step workflow
 │   ├── write_script.py      # step 1 — OpenAI script generation
-│   ├── audio_generation.py  # step 2 — Suno audio generation
+│   ├── audio_generation.py  # step 2 — MusicAPI audio generation
 │   ├── video_generation.py  # step 3 — Segmind video generation
 │   ├── upload_assets.py     # upload local files to Segmind storage
 │   ├── config.py            # paths, env vars, API config, logging
@@ -95,7 +95,7 @@ pastor_al/
 | Service | Estimated Cost |
 |---------|---------------|
 | OpenAI  | ~$0.01        |
-| Suno    | ~$0.10        |
+| MusicAPI    | ~$0.10        |
 | Segmind | ~$0.25        |
 
 ## Other Ideas
