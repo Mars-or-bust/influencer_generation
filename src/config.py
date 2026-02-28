@@ -28,6 +28,7 @@ MUSICAPI_MODEL = "sonic-v4-5"
 
 # ── Segmind / Higgsfield config ───────────────────────────────────────────
 SEGMIND_BASE_URL = "https://api.segmind.com"
+SEGMIND_IMAGE_MODEL = "flux-schnell"
 
 # Avatar image + test audio hosted on Segmind storage
 AVATAR_IMAGE_URL = os.environ.get(

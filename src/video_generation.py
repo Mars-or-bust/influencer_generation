@@ -95,7 +95,7 @@ def generate_video(
     }
 
     url = f"{SEGMIND_BASE_URL}/v1/infinite-talk"
-    response = requests.post(url, headers=_headers(), json=payload, timeout=60)
+    response = requests.post(url, headers=_headers(), json=payload, timeout=(30, None))
 
     output_path = OUTPUT_DIR / "video.mp4"
     content_type = response.headers.get("Content-Type", "")
